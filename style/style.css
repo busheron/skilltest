@@ -1,0 +1,200 @@
+body { font-family: Arial, Helvetica, sans-serif;}
+
+/***Текст***/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Philosopher:400,400i,700,700i&subset=cyrillic');
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+p {}
+
+
+/***Кнопки***/
+.ButtonFirst, .ButtonSecond, .ButtonThird, .ButtonFourth, .ButtonFifth, .ButtonSixth {
+    position: relative;
+    display: inline-block;
+    padding: 0px 14px;
+    height: 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    vertical-align: baseline;
+    margin: 0px 8px 8px 0px;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    outline: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+
+/*ButtonFirst*/
+.ButtonFirst {
+    background-color: #ebebeb;
+    border: 1px solid #afafaf;
+    color: #111; }
+
+.ButtonFirst:hover, .ButtonFirst:focus {
+    background-color: #f4f4f4;
+    color: #111; }
+
+.ButtonFirst:active {
+    background-color: #e1e1e1; }
+
+.ButtonFirstDisabled, .ButtonFirstDisabled:hover, .ButtonFirstDisabled:focus, .ButtonFirstDisabled:active {
+    background-color: #f0f0f0 !important;
+    border: 1px solid #d3d3d3 !important;
+    color: #888888 !important; }
+
+/*ButtonSecond*/
+.ButtonSecond {
+    background-color: #ebebeb;
+    border: 2px solid #dc241f;
+    color: #111; }
+
+.ButtonSecond:hover, .ButtonSecond:focus {
+    background-color: #f4f4f4; }
+
+.ButtonSecond:active {
+    background-color: #cecece;
+    color: #4c4c4c; }
+
+.ButtonSecondDisabled, .ButtonSecondDisabled:hover, .ButtonSecondDisabled:focus, .ButtonSecondDisabled:active {
+    background-color: #f0f0f0 !important;
+    border: 2px solid #d3d3d3 !important;
+    color: #888888 !important; }
+
+/*ButtonThird*/
+.ButtonThird {
+    background-color:#ca130c;
+    border: none;
+    color: #fff; }
+
+.ButtonThird:hover, .ButtonThird:focus {
+    background-color: #e83029; }
+
+.ButtonThird:active {
+    background-color: #a9120c;
+    color: #edc2c2; }
+
+.ButtonThirdDisabled, .ButtonThirdDisabled:hover, .ButtonThirdDisabled:focus, .ButtonThirdDisabled:active {
+    background-color: #ec8e8b !important;
+    color: #ffd8d7 !important; }
+
+/*ButtonFourth
+Копирует стиль ButtonFirst + after*/
+.ButtonFourth { padding: 0px 10px !important; }
+
+/*ButtonFifth*/
+.ButtonFifth {
+    background-color:#6e9735;
+    border: none;
+    color: #fff; }
+
+.ButtonFifth:hover, .ButtonFifth:focus {
+    background-color: #85b444; }
+
+.ButtonFifth:active {
+    background-color: #5e822b;
+    color: #e1f0cd; }
+
+.ButtonFifthDisabled, .ButtonFifthDisabled:hover, .ButtonFifthDisabled:focus, .ButtonFifthDisabled:active {
+    background-color: #9fba7b !important;
+    color: #e5f1d4 !important; }
+
+/*ButtonSixth*/
+.ButtonSixth {
+    background-color: #ebebeb;
+    border: solid 2px #6e9735;
+    color: #111; }
+
+.ButtonSixth:hover, .ButtonSixth:focus {
+    background-color: #f4f4f4; }
+
+.ButtonSixth:active {
+    background-color: #e1e1e1;
+    color: #4c4c4c; }
+
+.ButtonSixthDisabled, .ButtonSixthDisabled:hover, .ButtonSixthDisabled:focus, .ButtonSixthDisabled:active {
+    background-color: #f0f0f0 !important;
+    border: 2px solid #d3d3d3 !important;
+    color: #888888 !important; }
+
+/*Button elements before & after*/
+/*Before*/
+.ButtonEdit:before, .ButtonUpload:before, .ButtonDelete:before, .ButtonPrint:before, .ButtonDownload:before {
+    content: '';
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: middle; }
+
+.ButtonEdit:before {
+    margin-top:-4px;
+    background-image: url("../img/Edit.png");
+    width: 14px;
+    height: 13px; }
+
+.ButtonUpload:before {
+    margin-top: -2px;
+    background-image: url("../img/Upload.png");
+    width: 12px;
+    height: 12px; }
+
+.ButtonDelete:before {
+    margin-top: -2px;
+    background-image: url("../img/Delete.png");
+    width: 10px;
+    height: 10px; }
+
+.ButtonPrint:before {
+    margin-top: -3px;
+    background-image: url("../img/Print.png");
+    width: 16px;
+    height: 14px; }
+
+.ButtonDownload:before {
+    margin-top: -2px;
+    background-image: url("../img/Download.png");
+    width: 12px;
+    height: 12px; }
+
+/*After*/
+.ButtonArrow:after, .ButtonArrowDisabled:after {
+    content: '';
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    background-image: url("../img/Arrow.png") ;
+    background-position: left top;
+    width: 4px;
+    height: 9px; }
+
+.ButtonArrow:active:after {
+    background-image: url("../img/ArrowActive.png"); }
+
+.ButtonArrowDisabled:after {
+    background-image: url("../img/ArrowNotActive.png") !important; }
+
+/***Витрина***/
+.Showcase {
+    display: flex;
+    padding-left: 0;
+    list-style: none; }
+
+.Showcase li {
+    display: list-item;
+    margin-left: -1px;
+    width: px;}
+
+.ShowcaseElement {
+    position: relative;
+    display: block;
+    padding: 10px 10px;
+    border: 1px solid #dee2e6;
+    text-decoration: none; }
